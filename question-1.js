@@ -6,10 +6,10 @@ const CHANGE = "Change";
 const messageArrToActivityMessage = (messageArr, uidToName) => {
   switch (messageArr[0]) {
     case ENTER:
-      return `${uidToName[messageArr[1]]} came in`;
+      return `${uidToName[messageArr[1]]} came in.`;
 
     case LEAVE:
-      return `${uidToName[messageArr[1]]} has left`;
+      return `${uidToName[messageArr[1]]} has left.`;
 
     default:
       throw Error(`Invalid action, should ${ENTER} or ${LEAVE}`);
@@ -45,3 +45,5 @@ const exampleRecord = [
 console.log("------------------------------------");
 console.log(solution(exampleRecord));
 console.log("------------------------------------");
+
+exports.default = solution
