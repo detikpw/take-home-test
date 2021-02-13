@@ -14,3 +14,10 @@ test('Question-2 Example 1', t => {
   const expected = [3, 4, 2, 1, 5]
 	t.deepEqual(question2Solution(N, users), expected, 'beda gan');
 });
+
+test('Question-2 Example 2', t => {
+  const N = 4
+  const users = [4, 4, 4, 4, 4]
+  const expected = [4, 1, 2, 3]
+	t.deepEqual(question2Solution(N, users), expected, 'beda gan');
+});
