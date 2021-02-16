@@ -13,7 +13,7 @@ This solution O(2n) with n is record's length.
 
 ## Question#3
 
-1. Maybe for this case I think more efficient with looping, with lopping 'easier' to cache, but I think it will hard to naming and validate the rule, so for this solution I separate unique column and non unique column.
+1. Maybe for this case I think more efficient with looping, with lopping 'easier' to cache / memoize, but I think it will hard to naming and validate the rule, so for this solution I separate unique column and non unique column.
 2. After separate change non unique column to unique column with combine / join value for each two column, with minimality rule, I think / intepret it just needs two key to candidates key, e.g:
 ```
 [
