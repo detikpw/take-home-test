@@ -1,5 +1,7 @@
 function solution(relation) {
   let answer = 0;
+
+  // TODO Simplify this structure
   const relationGroupedByColumn = relation.reduce((acc, currentRow) => 
     currentRow.map((value, index) => (acc[index] || []).concat(value))
   , [])
@@ -8,6 +10,7 @@ function solution(relation) {
   const isColumnUnique = column => (new Set(column)).size === column.length
   
   const uniqueColumns = [...relationGroupedByColumn.entries()]
+  // TODO Reduce instead  filter and map
   .filter(([_key, col], index) => {
     const isUnique = isColumnUnique(col);
     if (!isUnique) {
@@ -30,6 +33,7 @@ function solution(relation) {
     return [...joinColumns(columns), ...getJoinedColumns([col2, ...restColumns])]
   }
 
+  // TODO Reduce instead  filter and map
   const relationKeys = getJoinedColumns(newMatrixNonUniqueColumn)
     .filter(isColumnUnique)
     .map(col => col[0].split(' - '))
