@@ -45,3 +45,15 @@ test("Question-3", (t) => {
   ];
   t.deepEqual(question3Solution(relation), 2, "beda gan");
 });
+
+test("Question-3 Custom 1", (t) => {
+  const relation = [
+    ["100", "ryan", "music", "2", "1", "1"],
+    ["200", "apeach", "math", "2", "2", "2"],
+    ["300", "tube", "computer", "3", "3", "3"],
+    ["400", "con", "computer", "4", "3", "4"],
+    ["500", "muzi", "music", "3", "2", "5"],
+    ["600", "apeach", "music", "2", "1", "6"],
+  ];
+  t.deepEqual(question3Solution(relation), 4, "beda gan");
+});
