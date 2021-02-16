@@ -1,22 +1,22 @@
 // Action const
-const LEAVE = "Leave";
-const ENTER = "Enter";
-const CHANGE = "Change";
-
-const messageArrToActivityMessage = (messageArr, uidToName) => {
-  switch (messageArr[0]) {
-    case ENTER:
-      return `${uidToName[messageArr[1]]} came in.`;
-
-    case LEAVE:
-      return `${uidToName[messageArr[1]]} has left.`;
-
-    default:
-      throw Error(`Invalid action, should ${ENTER} or ${LEAVE}`);
-  }
-};
 
 function solution(record) {
+  const LEAVE = "Leave";
+  const ENTER = "Enter";
+  const CHANGE = "Change";
+
+  const messageArrToActivityMessage = (messageArr, uidToName) => {
+    switch (messageArr[0]) {
+      case ENTER:
+        return `${uidToName[messageArr[1]]} came in.`;
+
+      case LEAVE:
+        return `${uidToName[messageArr[1]]} has left.`;
+
+      default:
+        throw Error(`Invalid action, should ${ENTER} or ${LEAVE}`);
+    }
+  };
   let answer = [];
   const uidToName = record.reduce((uidToNameTemp, message) => {
     const messageArr = message.split(" ");
@@ -46,4 +46,4 @@ console.log("------------------------------------");
 console.log(solution(exampleRecord));
 console.log("------------------------------------");
 
-exports.default = solution
+exports.default = solution;
