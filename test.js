@@ -17,21 +17,21 @@ test("Question-1", (t) => {
     "Prodo has left.",
     "Prodo came in.",
   ];
-  t.deepEqual(question1Solution(records), expected, "beda gan");
+  t.deepEqual(question1Solution(records), expected);
 });
 
 test("Question-2 Example 1", (t) => {
   const N = 5;
   const users = [2, 1, 2, 6, 2, 4, 3, 3];
   const expected = [3, 4, 2, 1, 5];
-  t.deepEqual(question2Solution(N, users), expected, "beda gan");
+  t.deepEqual(question2Solution(N, users), expected);
 });
 
 test("Question-2 Example 2", (t) => {
   const N = 4;
   const users = [4, 4, 4, 4, 4];
   const expected = [4, 1, 2, 3];
-  t.deepEqual(question2Solution(N, users), expected, "beda gan");
+  t.deepEqual(question2Solution(N, users), expected);
 });
 
 test("Question-3", (t) => {
@@ -43,7 +43,7 @@ test("Question-3", (t) => {
     ["500", "muzi", "music", "3"],
     ["600", "apeach", "music", "2"],
   ];
-  t.deepEqual(question3Solution(relation), 2, "beda gan");
+  t.deepEqual(question3Solution(relation), 2);
 });
 
 test("Question-3 Custom 1", (t) => {
@@ -55,5 +55,5 @@ test("Question-3 Custom 1", (t) => {
     ["500", "muzi", "music", "3", "2", "5"],
     ["600", "apeach", "music", "2", "1", "6"],
   ];
-  t.deepEqual(question3Solution(relation), 4, "beda gan");
+  t.deepEqual(question3Solution(relation), 4);
 });
