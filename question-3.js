@@ -1,7 +1,6 @@
 function solution(relation) {
   let answer = 0;
 
-  // TODO Simplify this structure
   const relationGroupedByColumn = relation.reduce(
     (acc, currentRow) =>
       currentRow.map((value, index) =>
