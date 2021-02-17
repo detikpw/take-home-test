@@ -1,8 +1,9 @@
-const getInitialTotalPlayerByStages = (totalStage) =>
-  Object.fromEntries(Array.from({ length: totalStage }, (_, i) => [i + 1, 0]));
 
 function solution(N, users) {
   let answer = [];
+
+  const getInitialTotalPlayerByStages = (totalStage) =>
+    Object.fromEntries(Array.from({ length: totalStage }, (_, i) => [i + 1, 0]));
   const totalPlayerByStages = users.reduce((acc, user) => {
     if (user === N + 1) return acc;
     return {
