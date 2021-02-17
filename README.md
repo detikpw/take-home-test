@@ -45,4 +45,6 @@ This solution O(2n) with n is record's length.
 7. Then O(n) with n is total joined columns, when get unique columns to get relation keys for candidate besides column name from unique keys that get in step 2, because I use the function that same in step-2 I sacriface space complexity because actually we didn't need non uniques columns in step-5
 8. Actually because I want to make it same with example, although that needed is just total cadidate key, and I wanted to simplify filter and map by using reduce, the code is not sweet as before, you can jump to https://github.com/detikpw/take-home-test/commit/80437c059207c517cbee69cb1e24bacdc4c5a574
 
-
+## Extra
+1. Already tested using Firefox 85.0.2 (64-bit) and google chrome Version 76.0.3809.100 (Official Build) (64-bit), for node js minimum version is 12
+2. Just ignore generator js, It just needed to make dummy records and relation for question#1 and qustion#3 with break some limitation in each question, and I want to test faker js and snapshot test
