@@ -1,5 +1,7 @@
 # NOTES
 
+The solutions are wtih file name `question-1.js`, `question-2.js` and `question-3.js`
+
 ## Question#1
 
 This solution O(2n) with n is record's length.
