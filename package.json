@@ -4,5 +4,8 @@
 	},
 	"devDependencies": {
 		"ava": "^3.15.0"
+	},
+	"dependencies": {
+		"faker": "^5.4.0"
 	}
 }
