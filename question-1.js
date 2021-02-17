@@ -1,4 +1,3 @@
-// Action const
 
 function solution(record) {
   const LEAVE = "Leave";
@@ -31,6 +30,9 @@ function solution(record) {
     if (messageArr[0] === CHANGE) return messages;
     return [...messages, messageArrToActivityMessage(messageArr, uidToName)];
   }, []);
+  console.log('------------------------------------');
+  console.log({ question1Answer: answer });
+  console.log('------------------------------------');
   return answer;
 }
 
